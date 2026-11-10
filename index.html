@@ -78,7 +78,7 @@ code{background:#eef2ff;padding:2px 6px;border-radius:4px}
 const SOUS={Math:["Numération","Opérations","Géométrie","Problème","Grandeur"],Français:["Orthographe","Grammaire","Conjugaison","Vocabulaire","Analyse"],Sciences:["Botanique","Anatomie","Zoologie"]};
 // ===== COURS : 1 modèle par sous-branche (à dupliquer pour chaque classe, changer classe) =====
 const COURS=[
-{classe:1,matiere:"Math",sous:"Numération",titre:"Les nombres de 0 à 11",objectif:"Compter de 0 à 10.",contenu:"On compte : 0,1,2,3,4,5,6,7,8,9,10,11.",exemples:"3 = trois, 7 = sept.",retenir:"Savoir compter de 0 à 10."},
+{classe:1,matiere:"Math",sous:"Numération",titre:" CHAP.1 Les nombres de 0 à 11",objectif:"Compter de 0 à 5.",contenu:"On commence par compter avec les doits: 0,1,2,3,4,5.",exemples:" Ex1°) 0 = Rien. tu as 0 bonbon, ta main est vide....  Ex2°) 1 = 1 doigt. 1 mangue.... Ex3°) 3 = 3 Cahiers.....  Ex4°) 4 = 4 pattes du chien.....  Ex5°) 5 = 5 doigts d'une main..",retenir:"Savoir compter de 0 à 5."},
 {classe:1,matiere:"Math",sous:"Numération",titre:"2) Les nombres de 0 à 10",objectif:"Compter de 0 à 10.",contenu:"On compte : 0,1,2,3,4,5,6,7,8,9,10.",exemples:"3 = trois, 7 = sept.",retenir:"Savoir compter de 0 à 10."},
 {classe:1,matiere:"Math",sous:"Opérations",titre:"Addition simple",objectif:"Additionner deux petits nombres.",contenu:"On ajoute : 2 + 3 = 5.",exemples:"1+1=2.",retenir:"Addition = ajouter."},
 {classe:1,matiere:"Math",sous:"Géométrie",titre:"Les formes",objectif:"Reconnaître rond, carré, triangle.",contenu:"Le ballon est rond, la fenêtre est carrée.",exemples:"Cherche un rond dans la classe.",retenir:"Rond, carré, triangle."},
@@ -164,8 +164,11 @@ const COURS=[
 <!-- ===== ICI TU COLLES POUR LA 3ème, 4ème, 5ème, 6ème : JUSTE EN DESSOUS DE LA 2ème, AVANT LE ]; DE COURS ===== -->
 // Pour les classes 2 à 6, le même modèle s'applique : copie un bloc ci-dessus et change classe:2, classe:3... et adapte le niveau. Exemples déjà prêts pour 4ème et 6ème :
 const EXERCICES=[
-{classe:1,matiere:"Math",sous:"Numération",q:"1°) Combien font 2 + 3 ?",opts:["4","5","6","3"],rep:1,expl:"2 + 3 = 5."},
-{classe:1,matiere:"Math",sous:"Numération",q:"2°) Combien font 2 + 3 ?",opts:["4","5","6","3"],rep:1,expl:"2 + 3 = 5."},
+{classe:1,matiere:"Math",sous:"Numération",q:" chap1: De 0 à 5. N°1. Combien de doigts tu as dans une main ?",opts:[" 3 doigts"," 5 doigts"," 2 doigts"," 10 doigts"],rep:1,expl:"la main contient 5 doigts."},
+{classe:1,matiere:"Math",sous:"Numération",q:" chap1: De 0 à 5. N°2. Tu as 0 bonbon. ça veut dire quoi ?",opts:[" Tu as beaucoup de bonbons"," Tu as 1 bonbon"," Tu n'as rien, ta main est vide"," Tu as 20 bonbons"],rep:2,expl:"tu as rien"},
+{classe:1,matiere:"Math",sous:"Numération",q:" chap1: De 0 à 5. N°3. Combien d'yeux tu as ?",opts:[" 3 yeux","2 yeux"," 6 yeux"," 8 yeux"],rep:1,expl:"le corps humain contient 2 yeux."},
+{classe:1,matiere:"Math",sous:"Numération",q:" chap1: De 0 à 5. N°4. Quel nombres vient après 3 ?",opts:[" 4","5"," 6","2"],rep:0,expl:"le nombre qui vient après 3 est 4."},
+{classe:1,matiere:"Math",sous:"Numération",q:" chap1: De 0 à 5. N°5. le chien à combien de pattes ?",opts:[" 3 Pattes","5 Pattes"," 1 Patte"," 2 Pattes"],rep:3,expl:"le chien a deux pattes."},
 {classe:1,matiere:"Math",sous:"Opérations",q:"Combien font 1 + 1 ?",opts:["1","2","3","0"],rep:1,expl:"1+1=2."},
 {classe:1,matiere:"Math",sous:"Géométrie",q:"Quelle forme est ronde ?",opts:["Carré","Cercle","Triangle","Rectangle"],rep:1,expl:"Le cercle est rond."},
 {classe:1,matiere:"Math",sous:"Problème",q:"Kito a 3 billes, on lui donne 2. Combien ?",opts:["4","5","6","3"],rep:1,expl:"3+2=5."},
